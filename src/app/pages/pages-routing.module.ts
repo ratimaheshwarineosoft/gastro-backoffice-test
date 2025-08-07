@@ -13,7 +13,10 @@ const routes: Routes = [
       path: 'users',
       loadChildren: () => import('./users/users.module').then((m) => m.UsersModule),
     },
-
+    {
+      path: 'onboarding',
+      loadChildren: () => import('./onboarding/onboarding.module').then((m) => m.OnboardingModule),
+    },
     // Fallback when no prior route is matched
     { path: '**', redirectTo: '', pathMatch: 'full' },
   ]),
@@ -23,4 +26,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class PagesRoutingModule {}
+export class PagesRoutingModule { }

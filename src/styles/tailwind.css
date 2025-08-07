@@ -1,0 +1,8 @@
+/* Add this after Tailwind imports */
+@import "preline/variants.css";
+/* @import '../assets/css/main.min.css'; */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
